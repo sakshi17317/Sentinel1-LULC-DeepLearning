@@ -1,0 +1,53 @@
+{
+    "model": "E23 ResNet34 U-Net",
+    "checkpoint": "/home/jovyan/vault/LULC_Project/results/exp23_e21_targeted_finetune/checkpoints/best_exp23.pth",
+    "checkpoint_epoch": 8,
+    "test_tiles": 100,
+    "overall_accuracy": 0.7904185249491469,
+    "mean_iou": 0.5741081993166269,
+    "macro_f1": 0.7011100677188226,
+    "per_class": [
+        {
+            "Class": "Tree",
+            "IoU (%)": 66.03119323260998,
+            "F1 (%)": 79.54070791998727,
+            "Precision (%)": 78.23378982204741,
+            "Recall (%)": 80.8920327350194
+        },
+        {
+            "Class": "Shrub/Grass/Moss",
+            "IoU (%)": 34.86066321442694,
+            "F1 (%)": 51.69878656016821,
+            "Precision (%)": 45.94217793003218,
+            "Recall (%)": 59.1046709625722
+        },
+        {
+            "Class": "Cropland",
+            "IoU (%)": 71.09819925375275,
+            "F1 (%)": 83.10806257909033,
+            "Precision (%)": 89.57646731764952,
+            "Recall (%)": 77.51092267676995
+        },
+        {
+            "Class": "Built-up",
+            "IoU (%)": 57.39638550320335,
+            "F1 (%)": 72.93227899701066,
+            "Precision (%)": 70.84864718684403,
+            "Recall (%)": 75.1421820367133
+        },
+        {
+            "Class": "Bare/Snow/Ice",
+            "IoU (%)": 23.14389286677252,
+            "F1 (%)": 37.588372964319944,
+            "Precision (%)": 54.366062380362564,
+            "Recall (%)": 28.723981765856344
+        },
+        {
+            "Class": "Water/Wetland/Mangrove",
+            "IoU (%)": 91.93458551921061,
+            "F1 (%)": 95.79783161071711,
+            "Precision (%)": 96.78283024571404,
+            "Recall (%)": 94.83268045156278
+        }
+    ]
+}

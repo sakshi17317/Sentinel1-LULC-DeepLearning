@@ -1,0 +1,29 @@
+{
+    "experiment": "E25",
+    "starting_checkpoint": "/home/jovyan/vault/LULC_Project/results/exp23_e21_targeted_finetune/checkpoints/best_exp23.pth",
+    "best_epoch": 8,
+    "train_accuracy": 0.7909090518951416,
+    "val_accuracy": 0.7181720733642578,
+    "train_miou": 0.6728280782699585,
+    "val_miou": 0.49896761775016785,
+    "train_macro_f1": 0.7973968386650085,
+    "val_macro_f1": 0.6266506314277649,
+    "validation_iou": [
+        0.5657032132148743,
+        0.3816778361797333,
+        0.6033985614776611,
+        0.5270764827728271,
+        0.06525766104459763,
+        0.8506917953491211
+    ],
+    "validation_f1": [
+        0.7226186990737915,
+        0.5524845719337463,
+        0.7526494860649109,
+        0.6903079152107239,
+        0.12251995503902435,
+        0.9193230271339417
+    ],
+    "bare_fp_weight": 0.05,
+    "learning_rate": 1e-06
+}

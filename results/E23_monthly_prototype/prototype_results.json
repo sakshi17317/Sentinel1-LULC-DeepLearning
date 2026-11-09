@@ -1,0 +1,299 @@
+{
+  "latitude": 49.4875,
+  "longitude": 8.466,
+  "start_month": "January",
+  "input_months": [
+    "February 2024",
+    "March 2024",
+    "April 2024",
+    "May 2024",
+    "June 2024",
+    "July 2024",
+    "August 2024",
+    "September 2024",
+    "October 2024",
+    "November 2024",
+    "December 2024",
+    "January 2025",
+    "February 2025",
+    "March 2025",
+    "April 2025",
+    "May 2025",
+    "June 2025",
+    "July 2025",
+    "August 2025",
+    "September 2025",
+    "October 2025",
+    "November 2025",
+    "December 2025"
+  ],
+  "output_months": [
+    "January 2025",
+    "February 2025",
+    "March 2025",
+    "April 2025",
+    "May 2025",
+    "June 2025",
+    "July 2025",
+    "August 2025",
+    "September 2025",
+    "October 2025",
+    "November 2025",
+    "December 2025"
+  ],
+  "checkpoint": "/home/jovyan/vault/LULC_Project/results/exp23_e21_targeted_finetune/checkpoints/best_exp23.pth",
+  "architecture": "ResNet34UNet",
+  "input_channels": 48,
+  "num_classes": 6,
+  "class_names": [
+    "Tree cover",
+    "Shrubland/grassland/moss",
+    "Cropland",
+    "Built-up",
+    "Bare land/snow/ice",
+    "Water/wetland/mangrove"
+  ],
+  "valid_coverage_percent": [
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+  ],
+  "monthly_class_percentages": [
+    {
+      "Month": "January 2025",
+      "Tree cover": 13.95416259765625,
+      "Shrubland/grassland/moss": 3.82537841796875,
+      "Cropland": 0.787353515625,
+      "Built-up": 71.40655517578125,
+      "Bare land/snow/ice": 0.45013427734375,
+      "Water/wetland/mangrove": 9.576416015625
+    },
+    {
+      "Month": "February 2025",
+      "Tree cover": 17.767333984375,
+      "Shrubland/grassland/moss": 2.65655517578125,
+      "Cropland": 0.68511962890625,
+      "Built-up": 68.9788818359375,
+      "Bare land/snow/ice": 0.4241943359375,
+      "Water/wetland/mangrove": 9.4879150390625
+    },
+    {
+      "Month": "March 2025",
+      "Tree cover": 15.6982421875,
+      "Shrubland/grassland/moss": 3.39508056640625,
+      "Cropland": 0.7415771484375,
+      "Built-up": 71.0052490234375,
+      "Bare land/snow/ice": 0.41351318359375,
+      "Water/wetland/mangrove": 8.746337890625
+    },
+    {
+      "Month": "April 2025",
+      "Tree cover": 15.740966796875,
+      "Shrubland/grassland/moss": 3.70941162109375,
+      "Cropland": 0.4730224609375,
+      "Built-up": 70.751953125,
+      "Bare land/snow/ice": 0.384521484375,
+      "Water/wetland/mangrove": 8.94012451171875
+    },
+    {
+      "Month": "May 2025",
+      "Tree cover": 15.72723388671875,
+      "Shrubland/grassland/moss": 3.9947509765625,
+      "Cropland": 0.5126953125,
+      "Built-up": 71.026611328125,
+      "Bare land/snow/ice": 0.3692626953125,
+      "Water/wetland/mangrove": 8.36944580078125
+    },
+    {
+      "Month": "June 2025",
+      "Tree cover": 13.43841552734375,
+      "Shrubland/grassland/moss": 4.7088623046875,
+      "Cropland": 0.4180908203125,
+      "Built-up": 72.674560546875,
+      "Bare land/snow/ice": 0.39215087890625,
+      "Water/wetland/mangrove": 8.367919921875
+    },
+    {
+      "Month": "July 2025",
+      "Tree cover": 15.9759521484375,
+      "Shrubland/grassland/moss": 4.0863037109375,
+      "Cropland": 0.872802734375,
+      "Built-up": 70.794677734375,
+      "Bare land/snow/ice": 0.238037109375,
+      "Water/wetland/mangrove": 8.0322265625
+    },
+    {
+      "Month": "August 2025",
+      "Tree cover": 14.84527587890625,
+      "Shrubland/grassland/moss": 3.86199951171875,
+      "Cropland": 0.885009765625,
+      "Built-up": 71.07696533203125,
+      "Bare land/snow/ice": 0.30517578125,
+      "Water/wetland/mangrove": 9.02557373046875
+    },
+    {
+      "Month": "September 2025",
+      "Tree cover": 14.92767333984375,
+      "Shrubland/grassland/moss": 5.0018310546875,
+      "Cropland": 0.30364990234375,
+      "Built-up": 70.52001953125,
+      "Bare land/snow/ice": 0.244140625,
+      "Water/wetland/mangrove": 9.002685546875
+    },
+    {
+      "Month": "October 2025",
+      "Tree cover": 16.41387939453125,
+      "Shrubland/grassland/moss": 4.50897216796875,
+      "Cropland": 0.64697265625,
+      "Built-up": 69.5465087890625,
+      "Bare land/snow/ice": 0.2532958984375,
+      "Water/wetland/mangrove": 8.63037109375
+    },
+    {
+      "Month": "November 2025",
+      "Tree cover": 15.92254638671875,
+      "Shrubland/grassland/moss": 4.02984619140625,
+      "Cropland": 0.79345703125,
+      "Built-up": 68.5699462890625,
+      "Bare land/snow/ice": 0.3173828125,
+      "Water/wetland/mangrove": 10.3668212890625
+    },
+    {
+      "Month": "December 2025",
+      "Tree cover": 17.29736328125,
+      "Shrubland/grassland/moss": 3.68499755859375,
+      "Cropland": 0.74615478515625,
+      "Built-up": 67.4896240234375,
+      "Bare land/snow/ice": 0.33721923828125,
+      "Water/wetland/mangrove": 10.44464111328125
+    }
+  ],
+  "month_to_month_change_percentage_points": [
+    {
+      "Month": "January 2025",
+      "Tree cover": NaN,
+      "Shrubland/grassland/moss": NaN,
+      "Cropland": NaN,
+      "Built-up": NaN,
+      "Bare land/snow/ice": NaN,
+      "Water/wetland/mangrove": NaN
+    },
+    {
+      "Month": "February 2025",
+      "Tree cover": 3.81317138671875,
+      "Shrubland/grassland/moss": -1.1688232421875,
+      "Cropland": -0.10223388671875,
+      "Built-up": -2.42767333984375,
+      "Bare land/snow/ice": -0.02593994140625,
+      "Water/wetland/mangrove": -0.0885009765625
+    },
+    {
+      "Month": "March 2025",
+      "Tree cover": -2.069091796875,
+      "Shrubland/grassland/moss": 0.738525390625,
+      "Cropland": 0.05645751953125,
+      "Built-up": 2.0263671875,
+      "Bare land/snow/ice": -0.01068115234375,
+      "Water/wetland/mangrove": -0.7415771484375
+    },
+    {
+      "Month": "April 2025",
+      "Tree cover": 0.042724609375,
+      "Shrubland/grassland/moss": 0.3143310546875,
+      "Cropland": -0.2685546875,
+      "Built-up": -0.2532958984375,
+      "Bare land/snow/ice": -0.02899169921875,
+      "Water/wetland/mangrove": 0.19378662109375
+    },
+    {
+      "Month": "May 2025",
+      "Tree cover": -0.01373291015625,
+      "Shrubland/grassland/moss": 0.28533935546875,
+      "Cropland": 0.0396728515625,
+      "Built-up": 0.274658203125,
+      "Bare land/snow/ice": -0.0152587890625,
+      "Water/wetland/mangrove": -0.5706787109375
+    },
+    {
+      "Month": "June 2025",
+      "Tree cover": -2.288818359375,
+      "Shrubland/grassland/moss": 0.714111328125,
+      "Cropland": -0.0946044921875,
+      "Built-up": 1.64794921875,
+      "Bare land/snow/ice": 0.02288818359375,
+      "Water/wetland/mangrove": -0.00152587890625
+    },
+    {
+      "Month": "July 2025",
+      "Tree cover": 2.53753662109375,
+      "Shrubland/grassland/moss": -0.62255859375,
+      "Cropland": 0.4547119140625,
+      "Built-up": -1.8798828125,
+      "Bare land/snow/ice": -0.15411376953125,
+      "Water/wetland/mangrove": -0.335693359375
+    },
+    {
+      "Month": "August 2025",
+      "Tree cover": -1.13067626953125,
+      "Shrubland/grassland/moss": -0.22430419921875,
+      "Cropland": 0.01220703125,
+      "Built-up": 0.28228759765625,
+      "Bare land/snow/ice": 0.067138671875,
+      "Water/wetland/mangrove": 0.99334716796875
+    },
+    {
+      "Month": "September 2025",
+      "Tree cover": 0.0823974609375,
+      "Shrubland/grassland/moss": 1.13983154296875,
+      "Cropland": -0.58135986328125,
+      "Built-up": -0.55694580078125,
+      "Bare land/snow/ice": -0.06103515625,
+      "Water/wetland/mangrove": -0.02288818359375
+    },
+    {
+      "Month": "October 2025",
+      "Tree cover": 1.4862060546875,
+      "Shrubland/grassland/moss": -0.49285888671875,
+      "Cropland": 0.34332275390625,
+      "Built-up": -0.9735107421875,
+      "Bare land/snow/ice": 0.0091552734375,
+      "Water/wetland/mangrove": -0.372314453125
+    },
+    {
+      "Month": "November 2025",
+      "Tree cover": -0.4913330078125,
+      "Shrubland/grassland/moss": -0.4791259765625,
+      "Cropland": 0.146484375,
+      "Built-up": -0.9765625,
+      "Bare land/snow/ice": 0.0640869140625,
+      "Water/wetland/mangrove": 1.7364501953125
+    },
+    {
+      "Month": "December 2025",
+      "Tree cover": 1.37481689453125,
+      "Shrubland/grassland/moss": -0.3448486328125,
+      "Cropland": -0.04730224609375,
+      "Built-up": -1.080322265625,
+      "Bare land/snow/ice": 0.01983642578125,
+      "Water/wetland/mangrove": 0.07781982421875
+    }
+  ],
+  "first_to_last_change_percentage_points": {
+    "Tree cover": 3.34320068359375,
+    "Shrubland/grassland/moss": -0.140380859375,
+    "Cropland": -0.04119873046875,
+    "Built-up": -3.91693115234375,
+    "Bare land/snow/ice": -0.1129150390625,
+    "Water/wetland/mangrove": 0.86822509765625
+  },
+  "interpretation": "Predictions are rolling 12-month-window estimates. They are not independently validated monthly land-cover classifications."
+}

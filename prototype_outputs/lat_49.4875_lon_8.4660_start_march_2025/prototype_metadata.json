@@ -1,0 +1,38 @@
+{
+    "model": "E23 ResNet34 U-Net",
+    "checkpoint": "/home/jovyan/vault/LULC_Project/results/exp23_e21_targeted_finetune/checkpoints/best_exp23.pth",
+    "checkpoint_epoch": 8,
+    "earth_engine_project": "final-project-513714",
+    "sentinel1_collection": "COPERNICUS/S1_GRD",
+    "latitude": 49.4875,
+    "longitude": 8.466,
+    "start_month": 3,
+    "output_start": "2025-03",
+    "output_end": "2026-02",
+    "number_of_output_maps": 12,
+    "number_of_input_months": 23,
+    "temporal_strategy": "12-month trailing Sentinel-1 windows; one prediction for each consecutive target month",
+    "projection": "EPSG:32632",
+    "tile_size": [
+        256,
+        256
+    ],
+    "pixel_size_metres": 30,
+    "tile_width_metres": 7680,
+    "pixel_area_square_metres": 900,
+    "classes": {
+        "0": "Tree",
+        "1": "Shrub/Grass/Moss",
+        "2": "Cropland",
+        "3": "Built-up",
+        "4": "Bare/Snow/Ice",
+        "5": "Water/Wetland/Mangrove"
+    },
+    "normalization": {
+        "VV_median": -10.296875,
+        "VV_IQR": 5.75,
+        "VH_median": -16.9375,
+        "VH_IQR": 6.765625
+    },
+    "scientific_limitation": "The model was trained using 2021 annual WorldCover labels and 2021 Sentinel-1 temporal inputs. Rolling-window predictions for other years and individual months are not independently validated monthly ground truth."
+}

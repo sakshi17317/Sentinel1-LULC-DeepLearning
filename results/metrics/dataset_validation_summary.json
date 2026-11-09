@@ -1,0 +1,23 @@
+{
+    "total_tiles": 500,
+    "successful_tiles": 500,
+    "warning_tiles": 369,
+    "failed_tiles": 0,
+    "split_counts": {
+        "train": 320,
+        "val": 80,
+        "test": 100
+    },
+    "sentinel1_statistics": {
+        "minimum_db": -47.75,
+        "maximum_db": 33.0,
+        "mean_db": -15.150546073913574,
+        "std_db": 6.571206569671631,
+        "median_db": -14.7265625,
+        "p01_db": -30.234375,
+        "p99_db": -1.2958984375
+    },
+    "validation_csv": "/home/jovyan/vault/LULC_Project/data/metadata/dataset_validation.csv",
+    "monthly_statistics_csv": "/home/jovyan/vault/LULC_Project/data/metadata/monthly_s1_statistics.csv",
+    "class_distribution_csv": "/home/jovyan/vault/LULC_Project/data/metadata/validated_class_distribution.csv"
+}

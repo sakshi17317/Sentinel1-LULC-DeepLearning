@@ -1,0 +1,39 @@
+{
+    "experiment": "E22 focal dice fine-tuning",
+    "starting_checkpoint": "/home/jovyan/vault/LULC_Project/results/exp21_fresh_422_resnet34_unet/checkpoints/best_exp21_resnet34_unet.pth",
+    "best_epoch": 3,
+    "training_accuracy": 0.7870765924453735,
+    "validation_accuracy": 0.7140024304389954,
+    "training_miou": 0.6662203669548035,
+    "validation_miou": 0.49320968985557556,
+    "training_macro_f1": 0.7929253578186035,
+    "validation_macro_f1": 0.6222202777862549,
+    "training_loss": 0.4302581751121665,
+    "validation_loss": 0.5155815601348877,
+    "validation_per_class": {
+        "Tree": {
+            "iou": 0.5701186060905457,
+            "f1": 0.72621089220047
+        },
+        "Shrub/Grass/Moss": {
+            "iou": 0.3825092017650604,
+            "f1": 0.5533550381660461
+        },
+        "Cropland": {
+            "iou": 0.6017469167709351,
+            "f1": 0.7513632774353027
+        },
+        "Built-up": {
+            "iou": 0.5202779173851013,
+            "f1": 0.6844511032104492
+        },
+        "Bare/Snow/Ice": {
+            "iou": 0.06073091924190521,
+            "f1": 0.11450768262147903
+        },
+        "Water/Wetland/Mangrove": {
+            "iou": 0.8238746523857117,
+            "f1": 0.9034334421157837
+        }
+    }
+}

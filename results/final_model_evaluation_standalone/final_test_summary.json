@@ -1,0 +1,111 @@
+{
+    "selected_model": "E23",
+    "selected_checkpoint": "/home/jovyan/vault/LULC_Project/results/exp23_e21_targeted_finetune/checkpoints/best_exp23.pth",
+    "selection_metric": "Validation mIoU",
+    "test_tiles": 100,
+    "test_OA_percent": 79.03492702825774,
+    "test_mIoU_percent": 57.40747476166178,
+    "test_MacroF1_percent": 70.10914722191052,
+    "class_names": [
+        "Tree",
+        "Shrub/Grass/Moss",
+        "Cropland",
+        "Built-up",
+        "Bare/Snow/Ice",
+        "Water/Wetland/Mangrove"
+    ],
+    "test_IoU_percent": [
+        66.02995263088346,
+        34.85231496169612,
+        71.07716327786008,
+        57.397073199230896,
+        23.153411643495087,
+        91.93493285680499
+    ],
+    "test_precision_percent": [
+        78.23560483057656,
+        45.91591308162781,
+        89.58621620005368,
+        70.84945217404743,
+        54.346695161902616,
+        96.78486793450976
+    ],
+    "test_recall_percent": [
+        80.88823062450241,
+        59.12416947681213,
+        77.4786282380888,
+        75.14245520104895,
+        28.744060145902893,
+        94.83109370093055
+    ],
+    "test_F1_percent": [
+        79.53980782935083,
+        51.68960573141913,
+        83.09368932242344,
+        72.93283417866166,
+        37.600926088056184,
+        95.7980201815518
+    ],
+    "test_confusion_matrix": [
+        [
+            1404121,
+            152274,
+            38940,
+            129463,
+            1098,
+            9982
+        ],
+        [
+            157898,
+            442707,
+            82753,
+            47003,
+            12078,
+            6336
+        ],
+        [
+            60595,
+            257022,
+            1288334,
+            27513,
+            11923,
+            17438
+        ],
+        [
+            111866,
+            46357,
+            15819,
+            550163,
+            4355,
+            3600
+        ],
+        [
+            6942,
+            52838,
+            6721,
+            19027,
+            38653,
+            10292
+        ],
+        [
+            53312,
+            12971,
+            5527,
+            3355,
+            3016,
+            1434344
+        ]
+    ],
+    "validation_comparison": [
+        {
+            "experiment": "E23",
+            "validation_OA_percent": 71.90910339355469,
+            "validation_mIoU_percent": 50.01543696193399,
+            "validation_MacroF1_percent": 62.756783085068854
+        }
+    ],
+    "skipped_candidates": {
+        "E14": "Error(s) in loading state_dict for ResNet34UNet:\n\tMissing key(s) in state_dict: \"input_projection.block.0.weight\", \"input_projection.block.1.weight\", \"input_projection.block.1.bias\", \"input_projection.block.1.running_mean\", \"input_projection.block.1.running_var\", \"input_projection.block.3.weight\", \"input_projection.block.4.weight\", \"input_projection.block.4.bias\", \"input_projection.block.4.running_mean\", \"input_projection.block.4.running_var\", \"layer2.0.shortcut.0.weight\", \"layer2.0.shortcut.1.weight\", \"layer2.0.shortcut.1.bias\", \"layer2.0.shortcut.1.running_mean\", \"layer2.0.shortcut.1.running_var\", \"layer3.0.shortcut.0.weight\", \"layer3.0.shortcut.1.weight\", \"layer3.0.shortcut.1.bias\", \"layer3.0.shortcut.1.running_mean\", \"layer3.0.shortcut.1.running_var\", \"layer4.0.shortcut.0.weight\", \"layer4.0.shortcut.1.weight\", \"layer4.0.shortcut.1.bias\", \"layer4.0.shortcut.1.running_mean\", \"layer4.0.shortcut.1.running_var\", \"decoder4.conv.block.0.weight\", \"decoder4.conv.block.1.weight\", \"decoder4.conv.block.1.bias\", \"decoder4.conv.block.1.running_mean\", \"decoder4.conv.block.1.running_var\", \"decoder4.conv.block.3.weight\", \"decoder4.conv.block.4.weight\", \"decoder4.conv.block.4.bias\", \"decoder4.conv.block.4.running_mean\", \"decoder4.conv.block.4.running_var\", \"decoder3.conv.block.0.weight\", \"decoder3.conv.block.1.weight\", \"decoder3.conv.block.1.bias\", \"decoder3.conv.block.1.running_mean\", \"decoder3.conv.block.1.running_var\", \"decoder3.conv.block.3.weight\", \"decoder3.conv.block.4.weight\", \"decoder3.conv.block.4.bias\", \"decoder3.conv.block.4.running_mean\", \"decoder3.conv.block.4.running_var\", \"decoder2.conv.block.0.weight\", \"decoder2.conv.block.1.weight\", \"decoder2.conv.block.1.bias\", \"decoder2.conv.block.1.running_mean\", \"decoder2.conv.block.1.running_var\", \"decoder2.conv.block.3.weight\", \"decoder2.conv.block.4.weight\", \"decoder2.conv.block.4.bias\", \"decoder2.conv.block.4.running_mean\", \"decoder2.conv.block.4.running_var\", \"decoder1.conv.block.0.weight\", \"decoder1.conv.block.1.weight\", \"decoder1.conv.block.1.bias\", \"decoder1.conv.block.1.running_mean\", \"decoder1.conv.block.1.running_var\", \"decoder1.conv.block.3.weight\", \"decoder1.conv.block.4.weight\", \"decoder1.conv.block.4.bias\", \"decoder1.conv.block.4.running_mean\", \"decoder1.conv.block.4.running_var\", \"decoder0.conv.block.0.weight\", \"decoder0.conv.block.1.weight\", \"decoder0.conv.block.1.bias\", \"decoder0.conv.block.1.running_mean\", \"decoder0.conv.block.1.running_var\", \"decoder0.conv.block.3.weight\", \"decoder0.conv.block.4.weight\", \"decoder0.conv.block.4.bias\", \"decoder0.conv.block.4.running_mean\", \"decoder0.conv.block.4.running_var\". \n\tUnexpected key(s) in state_dict: \"final_block.block.0.weight\", \"final_block.block.1.weight\", \"final_block.block.1.bias\", \"final_block.block.1.running_mean\", \"final_block.block.1.running_var\", \"final_block.block.1.num_batches_tracked\", \"final_block.block.3.weight\", \"final_block.block.4.weight\", \"final_block.block.4.bias\", \"final_block.block.4.running_mean\", \"final_block.block.4.running_var\", \"final_block.block.4.num_batches_tracked\", \"layer2.0.downsample.0.weight\", \"layer2.0.downsample.1.weight\", \"layer2.0.downsample.1.bias\", \"layer2.0.downsample.1.running_mean\", \"layer2.0.downsample.1.running_var\", \"layer2.0.downsample.1.num_batches_tracked\", \"layer3.0.downsample.0.weight\", \"layer3.0.downsample.1.weight\", \"layer3.0.downsample.1.bias\", \"layer3.0.downsample.1.running_mean\", \"layer3.0.downsample.1.running_var\", \"layer3.0.downsample.1.num_batches_tracked\", \"layer4.0.downsample.0.weight\", \"layer4.0.downsample.1.weight\", \"layer4.0.downsample.1.bias\", \"layer4.0.downsample.1.running_mean\", \"layer4.0.downsample.1.running_var\", \"layer4.0.downsample.1.num_batches_tracked\", \"decoder4.block.0.weight\", \"decoder4.block.1.weight\", \"decoder4.block.1.bias\", \"decoder4.block.1.running_mean\", \"decoder4.block.1.running_var\", \"decoder4.block.1.num_batches_tracked\", \"decoder4.block.3.weight\", \"decoder4.block.4.weight\", \"decoder4.block.4.bias\", \"decoder4.block.4.running_mean\", \"decoder4.block.4.running_var\", \"decoder4.block.4.num_batches_tracked\", \"decoder3.block.0.weight\", \"decoder3.block.1.weight\", \"decoder3.block.1.bias\", \"decoder3.block.1.running_mean\", \"decoder3.block.1.running_var\", \"decoder3.block.1.num_batches_tracked\", \"decoder3.block.3.weight\", \"decoder3.block.4.weight\", \"decoder3.block.4.bias\", \"decoder3.block.4.running_mean\", \"decoder3.block.4.running_var\", \"decoder3.block.4.num_batches_tracked\", \"decoder2.block.0.weight\", \"decoder2.block.1.weight\", \"decoder2.block.1.bias\", \"decoder2.block.1.running_mean\", \"decoder2.block.1.running_var\", \"decoder2.block.1.num_batches_tracked\", \"decoder2.block.3.weight\", \"decoder2.block.4.weight\", \"decoder2.block.4.bias\", \"decoder2.block.4.running_mean\", \"decoder2.block.4.running_var\", \"decoder2.block.4.num_batches_tracked\", \"decoder1.block.0.weight\", \"decoder1.block.1.weight\", \"decoder1.block.1.bias\", \"decoder1.block.1.running_mean\", \"decoder1.block.1.running_var\", \"decoder1.block.1.num_batches_tracked\", \"decoder1.block.3.weight\", \"decoder1.block.4.weight\", \"decoder1.block.4.bias\", \"decoder1.block.4.running_mean\", \"decoder1.block.4.running_var\", \"decoder1.block.4.num_batches_tracked\". \n\tsize mismatch for conv1.weight: copying a param with shape torch.Size([64, 24, 7, 7]) from checkpoint, the shape in current model is torch.Size([64, 48, 7, 7]).",
+        "E19": "Error(s) in loading state_dict for ResNet34UNet:\n\tMissing key(s) in state_dict: \"input_projection.block.0.weight\", \"input_projection.block.1.weight\", \"input_projection.block.1.bias\", \"input_projection.block.1.running_mean\", \"input_projection.block.1.running_var\", \"input_projection.block.3.weight\", \"input_projection.block.4.weight\", \"input_projection.block.4.bias\", \"input_projection.block.4.running_mean\", \"input_projection.block.4.running_var\", \"layer2.0.shortcut.0.weight\", \"layer2.0.shortcut.1.weight\", \"layer2.0.shortcut.1.bias\", \"layer2.0.shortcut.1.running_mean\", \"layer2.0.shortcut.1.running_var\", \"layer3.0.shortcut.0.weight\", \"layer3.0.shortcut.1.weight\", \"layer3.0.shortcut.1.bias\", \"layer3.0.shortcut.1.running_mean\", \"layer3.0.shortcut.1.running_var\", \"layer4.0.shortcut.0.weight\", \"layer4.0.shortcut.1.weight\", \"layer4.0.shortcut.1.bias\", \"layer4.0.shortcut.1.running_mean\", \"layer4.0.shortcut.1.running_var\", \"decoder4.conv.block.0.weight\", \"decoder4.conv.block.1.weight\", \"decoder4.conv.block.1.bias\", \"decoder4.conv.block.1.running_mean\", \"decoder4.conv.block.1.running_var\", \"decoder4.conv.block.3.weight\", \"decoder4.conv.block.4.weight\", \"decoder4.conv.block.4.bias\", \"decoder4.conv.block.4.running_mean\", \"decoder4.conv.block.4.running_var\", \"decoder3.conv.block.0.weight\", \"decoder3.conv.block.1.weight\", \"decoder3.conv.block.1.bias\", \"decoder3.conv.block.1.running_mean\", \"decoder3.conv.block.1.running_var\", \"decoder3.conv.block.3.weight\", \"decoder3.conv.block.4.weight\", \"decoder3.conv.block.4.bias\", \"decoder3.conv.block.4.running_mean\", \"decoder3.conv.block.4.running_var\", \"decoder2.conv.block.0.weight\", \"decoder2.conv.block.1.weight\", \"decoder2.conv.block.1.bias\", \"decoder2.conv.block.1.running_mean\", \"decoder2.conv.block.1.running_var\", \"decoder2.conv.block.3.weight\", \"decoder2.conv.block.4.weight\", \"decoder2.conv.block.4.bias\", \"decoder2.conv.block.4.running_mean\", \"decoder2.conv.block.4.running_var\", \"decoder1.conv.block.0.weight\", \"decoder1.conv.block.1.weight\", \"decoder1.conv.block.1.bias\", \"decoder1.conv.block.1.running_mean\", \"decoder1.conv.block.1.running_var\", \"decoder1.conv.block.3.weight\", \"decoder1.conv.block.4.weight\", \"decoder1.conv.block.4.bias\", \"decoder1.conv.block.4.running_mean\", \"decoder1.conv.block.4.running_var\", \"decoder0.conv.block.0.weight\", \"decoder0.conv.block.1.weight\", \"decoder0.conv.block.1.bias\", \"decoder0.conv.block.1.running_mean\", \"decoder0.conv.block.1.running_var\", \"decoder0.conv.block.3.weight\", \"decoder0.conv.block.4.weight\", \"decoder0.conv.block.4.bias\", \"decoder0.conv.block.4.running_mean\", \"decoder0.conv.block.4.running_var\". \n\tUnexpected key(s) in state_dict: \"final_block.block.0.weight\", \"final_block.block.1.weight\", \"final_block.block.1.bias\", \"final_block.block.1.running_mean\", \"final_block.block.1.running_var\", \"final_block.block.1.num_batches_tracked\", \"final_block.block.3.weight\", \"final_block.block.4.weight\", \"final_block.block.4.bias\", \"final_block.block.4.running_mean\", \"final_block.block.4.running_var\", \"final_block.block.4.num_batches_tracked\", \"layer2.0.downsample.0.weight\", \"layer2.0.downsample.1.weight\", \"layer2.0.downsample.1.bias\", \"layer2.0.downsample.1.running_mean\", \"layer2.0.downsample.1.running_var\", \"layer2.0.downsample.1.num_batches_tracked\", \"layer3.0.downsample.0.weight\", \"layer3.0.downsample.1.weight\", \"layer3.0.downsample.1.bias\", \"layer3.0.downsample.1.running_mean\", \"layer3.0.downsample.1.running_var\", \"layer3.0.downsample.1.num_batches_tracked\", \"layer4.0.downsample.0.weight\", \"layer4.0.downsample.1.weight\", \"layer4.0.downsample.1.bias\", \"layer4.0.downsample.1.running_mean\", \"layer4.0.downsample.1.running_var\", \"layer4.0.downsample.1.num_batches_tracked\", \"decoder4.block.0.weight\", \"decoder4.block.1.weight\", \"decoder4.block.1.bias\", \"decoder4.block.1.running_mean\", \"decoder4.block.1.running_var\", \"decoder4.block.1.num_batches_tracked\", \"decoder4.block.3.weight\", \"decoder4.block.4.weight\", \"decoder4.block.4.bias\", \"decoder4.block.4.running_mean\", \"decoder4.block.4.running_var\", \"decoder4.block.4.num_batches_tracked\", \"decoder3.block.0.weight\", \"decoder3.block.1.weight\", \"decoder3.block.1.bias\", \"decoder3.block.1.running_mean\", \"decoder3.block.1.running_var\", \"decoder3.block.1.num_batches_tracked\", \"decoder3.block.3.weight\", \"decoder3.block.4.weight\", \"decoder3.block.4.bias\", \"decoder3.block.4.running_mean\", \"decoder3.block.4.running_var\", \"decoder3.block.4.num_batches_tracked\", \"decoder2.block.0.weight\", \"decoder2.block.1.weight\", \"decoder2.block.1.bias\", \"decoder2.block.1.running_mean\", \"decoder2.block.1.running_var\", \"decoder2.block.1.num_batches_tracked\", \"decoder2.block.3.weight\", \"decoder2.block.4.weight\", \"decoder2.block.4.bias\", \"decoder2.block.4.running_mean\", \"decoder2.block.4.running_var\", \"decoder2.block.4.num_batches_tracked\", \"decoder1.block.0.weight\", \"decoder1.block.1.weight\", \"decoder1.block.1.bias\", \"decoder1.block.1.running_mean\", \"decoder1.block.1.running_var\", \"decoder1.block.1.num_batches_tracked\", \"decoder1.block.3.weight\", \"decoder1.block.4.weight\", \"decoder1.block.4.bias\", \"decoder1.block.4.running_mean\", \"decoder1.block.4.running_var\", \"decoder1.block.4.num_batches_tracked\". \n\tsize mismatch for conv1.weight: copying a param with shape torch.Size([64, 24, 7, 7]) from checkpoint, the shape in current model is torch.Size([64, 48, 7, 7])."
+    }
+}

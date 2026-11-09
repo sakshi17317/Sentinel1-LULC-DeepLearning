@@ -1,0 +1,29 @@
+# Datasets
+processed_dataset_unified/
+processed_dataset_final_expanded/
+processed_dataset_geo_expanded/
+processed_dataset_complete/
+processed_dataset_final/
+data/
+
+# Model weights
+*.pth
+*.pt
+*.ckpt
+*.npy
+*.npz
+
+# Cache
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Credentials
+.env
+service_account.json
+credentials.json
+
+# System files
+.DS_Store
+Thumbs.db
+prototype_outputs/*/raw_monthly_data/
