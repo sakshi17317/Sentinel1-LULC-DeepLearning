@@ -270,9 +270,6 @@ Germany
 - Google Earth Engine for satellite data access and processing infrastructure.
 - The open-source Python and deep learning communities.
 
-## License
-
-Add an appropriate license after confirming the redistribution terms of the code and dataset.
 
 ---
 
