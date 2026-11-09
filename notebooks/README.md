@@ -1,8 +1,8 @@
-\# Sentinel-1 LULC Monthly Monitoring Prototype
+# Sentinel-1 LULC Monthly Monitoring Prototype
 
 
 
-\## 1. Overview
+## 1. Overview
 
 
 
@@ -12,11 +12,11 @@ This prototype demonstrates monthly Land Use and Land Cover (LULC) monitoring us
 
 The prototype allows users to specify:
 
-\- Latitude
+- Latitude
 
-\- Longitude
+- Longitude
 
-\- Start month (`YYYY-MM`)
+- Start month (`YYYY-MM`)
 
 
 
@@ -28,7 +28,7 @@ The prototype uses Sentinel-1 VV and VH polarization data and predicts six merge
 
 
 
-\## 2. Prototype Objectives
+## 2. Prototype Objectives
 
 
 
@@ -36,19 +36,19 @@ The main objectives are to:
 
 
 
-\- Generate monthly LULC predictions for a user-selected geographic location.
+- Generate monthly LULC predictions for a user-selected geographic location.
 
-\- Visualize 12 consecutive monthly LULC maps.
+- Visualize 12 consecutive monthly LULC maps.
 
-\- Calculate the percentage of the area occupied by each LULC class.
+- Calculate the percentage of the area occupied by each LULC class.
 
-\- Calculate month-to-month changes in class-area percentages.
+- Calculate month-to-month changes in class-area percentages.
 
-\- Compare the first and last months to identify overall percentage-point changes.
+- Compare the first and last months to identify overall percentage-point changes.
 
 
 
-\## 3. Input Parameters
+## 3. Input Parameters
 
 
 
@@ -72,7 +72,7 @@ The selected coordinates define the centre of the analysis region.
 
 
 
-\## 4. Data Source
+## 4. Data Source
 
 
 
@@ -80,15 +80,15 @@ The prototype retrieves Sentinel-1 GRD imagery through Google Earth Engine.
 
 
 
-\*\*Dataset:\*\* `COPERNICUS/S1\_GRD`
+**Dataset:** `COPERNICUS/S1\_GRD`
 
 
 
 The two input channels are:
 
-\- VV polarization
+- VV polarization
 
-\- VH polarization
+- VH polarization
 
 
 
@@ -100,7 +100,7 @@ The model was trained using Sentinel-1 observations from 2021 and ESA WorldCover
 
 
 
-\## 5. Temporal Data Retrieval
+## 5. Temporal Data Retrieval
 
 
 
@@ -116,11 +116,11 @@ For example, if the selected start month is March 2025:
 
 
 
-\- First output: March 2025
+- First output: March 2025
 
-\- Last output: February 2026
+- Last output: February 2026
 
-\- Required observation period: April 2024 – February 2026
+- Required observation period: April 2024 – February 2026
 
 
 
@@ -136,7 +136,7 @@ If observations are unavailable for a particular month, a nearby-month fallback 
 
 
 
-\## 6. Spatial Processing
+## 6. Spatial Processing
 
 
 
@@ -146,13 +146,13 @@ The analysis region is constructed around the input coordinates.
 
 The prototype uses:
 
-\- Spatial resolution: 30 metres
+- Spatial resolution: 30 metres
 
-\- Image dimensions: 256 × 256 pixels
+- Image dimensions: 256 × 256 pixels
 
-\- Approximate coverage: 7.68 km × 7.68 km
+- Approximate coverage: 7.68 km × 7.68 km
 
-\- Input channels: VV and VH
+- Input channels: VV and VH
 
 
 
@@ -160,7 +160,7 @@ The imagery is transformed into the input format expected by the trained segment
 
 
 
-\## 7. Deep Learning Model
+## 7. Deep Learning Model
 
 
 
@@ -176,7 +176,7 @@ The selected model was developed and evaluated using geographically separated tr
 
 
 
-\## 8. LULC Classification Scheme
+## 8. LULC Classification Scheme
 
 
 
@@ -208,7 +208,7 @@ Invalid pixels are excluded from area calculations.
 
 
 
-\## 9. Monthly Outputs
+## 9. Monthly Outputs
 
 
 
@@ -216,13 +216,13 @@ For each of the 12 months, the prototype generates:
 
 
 
-1\. A predicted LULC segmentation map.
+1. A predicted LULC segmentation map.
 
-2\. A visualization of the predicted land-cover distribution.
+2. A visualization of the predicted land-cover distribution.
 
-3\. The percentage of valid pixels belonging to each class.
+3. The percentage of valid pixels belonging to each class.
 
-4\. The corresponding class-area statistics.
+4. The corresponding class-area statistics.
 
 
 
@@ -230,7 +230,7 @@ All 12 monthly maps are visualized to allow temporal comparison.
 
 
 
-\## 10. Area Calculation
+## 10. Area Calculation
 
 
 
@@ -238,9 +238,9 @@ Each pixel represents an approximate ground area of:
 
 
 
-\- 30 m × 30 m = 900 m²
+- 30 m × 30 m = 900 m²
 
-\- 900 m² = 0.0009 km²
+- 900 m² = 0.0009 km²
 
 
 
@@ -248,7 +248,7 @@ For each class:
 
 
 
-\*\*Class area (km²):\*\*
+**Class area (km²):**
 
 
 
@@ -256,7 +256,7 @@ For each class:
 
 
 
-\*\*Class-area percentage:\*\*
+**Class-area percentage:**
 
 
 
@@ -268,7 +268,7 @@ Invalid pixels with class ID 255 are excluded from the denominator.
 
 
 
-\## 11. Temporal Change Analysis
+## 11. Temporal Change Analysis
 
 
 
@@ -276,7 +276,7 @@ The prototype calculates two types of changes.
 
 
 
-\### A. Month-to-Month Change
+### A. Month-to-Month Change
 
 
 
@@ -288,7 +288,7 @@ For each class, the percentage-point change between consecutive months is:
 
 
 
-\### B. First-to-Last Month Change
+### B. First-to-Last Month Change
 
 
 
@@ -304,7 +304,7 @@ These values represent percentage-point differences, not relative percentage gro
 
 
 
-\## 12. Outputs and Visualizations
+## 12. Outputs and Visualizations
 
 
 
@@ -312,17 +312,17 @@ The prototype produces:
 
 
 
-\- Twelve consecutive monthly LULC maps.
+- Twelve consecutive monthly LULC maps.
 
-\- Monthly class-area percentage tables.
+- Monthly class-area percentage tables.
 
-\- Month-to-month percentage-point change tables.
+- Month-to-month percentage-point change tables.
 
-\- First-to-last month percentage-point change summaries.
+- First-to-last month percentage-point change summaries.
 
-\- Temporal visualizations of LULC class distributions.
+- Temporal visualizations of LULC class distributions.
 
-\- Metadata describing the input location and observation periods.
+- Metadata describing the input location and observation periods.
 
 
 
@@ -330,7 +330,7 @@ The generated results are stored in the `prototype\_outputs` directory.
 
 
 
-\## 13. Execution Requirements
+## 13. Execution Requirements
 
 
 
@@ -338,23 +338,23 @@ The prototype requires:
 
 
 
-\- Python
+- Python
 
-\- PyTorch
+- PyTorch
 
-\- Google Earth Engine Python API
+- Google Earth Engine Python API
 
-\- NumPy
+- NumPy
 
-\- Pandas
+- Pandas
 
-\- Matplotlib
+- Matplotlib
 
-\- Rasterio
+- Rasterio
 
-\- Geospatial processing dependencies
+- Geospatial processing dependencies
 
-\- The trained ResNet34 U-Net model checkpoint
+- The trained ResNet34 U-Net model checkpoint
 
 
 
@@ -366,7 +366,7 @@ The prototype notebook is located in this `notebooks` directory.
 
 
 
-\## 14. Important Limitations
+## 14. Important Limitations
 
 
 
@@ -374,27 +374,27 @@ The prototype demonstrates a monthly monitoring workflow, but several limitation
 
 
 
-\*\*Temporal generalization:\*\* The model was trained using 2021 Sentinel-1 observations and annual ESA WorldCover 2021 reference labels. Its predictions for other years may be affected by changes in land-cover conditions and acquisition characteristics.
+**Temporal generalization:** The model was trained using 2021 Sentinel-1 observations and annual ESA WorldCover 2021 reference labels. Its predictions for other years may be affected by changes in land-cover conditions and acquisition characteristics.
 
 
 
-\*\*SAR classification ambiguity:\*\* Different land-cover types can have similar radar backscatter characteristics, which can lead to classification errors.
+**SAR classification ambiguity:** Different land-cover types can have similar radar backscatter characteristics, which can lead to classification errors.
 
 
 
-\*\*Seasonality:\*\* Sentinel-1 backscatter can vary with vegetation conditions, soil moisture, rainfall and agricultural cycles.
+**Seasonality:** Sentinel-1 backscatter can vary with vegetation conditions, soil moisture, rainfall and agricultural cycles.
 
 
 
-\*\*Rolling-window interpretation:\*\* Each monthly prediction uses a rolling 12-month observation window. Therefore, consecutive predictions share most of their input observations.
+**Rolling-window interpretation:** Each monthly prediction uses a rolling 12-month observation window. Therefore, consecutive predictions share most of their input observations.
 
 
 
-\*\*Fallback observations:\*\* When a monthly observation is unavailable, nearby-month data may be used. Such outputs should be interpreted with caution.
+**Fallback observations:** When a monthly observation is unavailable, nearby-month data may be used. Such outputs should be interpreted with caution.
 
 
 
-\*\*Change interpretation:\*\* Changes in predicted class-area percentages do not necessarily represent confirmed real-world land-cover transitions. They may also result from model uncertainty, seasonal effects or differences in available observations.
+**Change interpretation:** Changes in predicted class-area percentages do not necessarily represent confirmed real-world land-cover transitions. They may also result from model uncertainty, seasonal effects or differences in available observations.
 
 
 
@@ -402,7 +402,7 @@ The monthly predictions should therefore be interpreted as model-based monitorin
 
 
 
-\## 15. Project Structure
+## 15. Project Structure
 
 
 
@@ -440,7 +440,7 @@ LULC\_Project/
 
 
 
-\## 16. Conclusion
+## 16. Conclusion
 
 
 
